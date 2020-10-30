@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <script src="js/logica.js"></script>
+
+    <style>
+        textarea {
+            width: 520px;
+        }
+    </style>
+
+</head>
+
+
+<body background="img/imagenfondo.jpg">
+
+    <h1 align="center"><img src="img/Titulo.png" height="100"></h1>   
+    <br>
+    &nbsp;
+    <br>
+    &nbsp;
+    <br>
+   
+     
+   
+
+    <table border=0 align=center bgcolor="white">
+        <tr>
+            <td colspan=2>Inserta el texto que deseas cifrar:</td>
+        </tr>
+
+        <tr>
+            <td colspan =2> <textarea id="cadena"></textarea> </td>
+        </tr>
+        <tr>
+            <td>Ingrese posiciones a recorrer: </td>
+            <td>
+                <form align="center" name="formulario" method="post" action="" onsubmit="return validar(this)">
+                <input type="text" size="35" placeholder="Ingrese numero de posiciones a recorrer" name="Posicion" maxlength="3" id="posicion">
+            
+                </form>
+            </td> 
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">De click en el boton con la acci&oacuten que desea realizar:</td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="codificar" onclick="codificar()" style='width:260px; height:25px'> </td>
+            <td><input type="button" value="decodificar" onclick="decodificar()" style='width:260px; height:25px'> </td>
+        </tr>
+
+        <tr> 
+            <td colspan="2" align="center">
+                <div id="resultado"></div>
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+
+</html>
